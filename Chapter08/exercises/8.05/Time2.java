@@ -67,7 +67,8 @@ public class Time2{
     // validate and set second
     public void setSecond(int s){
         if(s >= 0 && s < 60)
-            secondsSinceMidnight += s;
+            
+            secondsSinceMidnight = s;
         else
             throw new IllegalArgumentException("second must be 0-59");
     }
